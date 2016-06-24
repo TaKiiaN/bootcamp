@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form name="forml">
+<label>Nombre: <input id="pruebaId" name="pruebaNAme" type="text"></label>
+<label>Hombre
+<input id="radioId1" name="radioName" type="radio" value="Hombre"></label>
+<label>Mujer
+<input id="radioId2" name="radioName" type="radio" value="Mujer"></label>
+<button onclick="mostrarValores(); return false;">Mostrar</button>
+<br>
+<br>
+<p id="demo"></p>
+</form>
+<script>
+	function mostrarValores() {
+		var valorPrueba = document.forml.pruebaId.value;
+		var valorRadio;
+		if (document.forml.radioId1.checked) {
+			valorRadio= document.forml.radioId1.value;
+		} else {
+			valorRadio=document.form2.radioId2.value;
+		}
+		document.getElementById("demo").innerHTML= "Nombre" + valorPrueba + "<br>Radio8:" + valorRadio;
+	}
+</script>
+
+</body>
+</html>

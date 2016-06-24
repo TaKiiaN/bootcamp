@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+	<script src=angular.js></script>
+	<div ng-app ng-init=myController>
+	<button ng-click="count= count + 5">Cliqueame</button>
+	<p>{{count}}</p>
+	</div>
+<script>
+	function myController($scope) {
+		$scope.count = 0;
+	}
+</script>
+
+</head>
+<body>
+
+
+</body>
+</html>

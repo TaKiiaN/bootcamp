@@ -1,0 +1,19 @@
+body {
+	background-image: url("/home/daniel/Documentos/Wordtechmakers/45157.jpg");
+    color: fff;
+}
+
+body, a {
+	color: white;
+	font-family:verdana;
+}
+ 
+
+.holo{
+	font-family:arial;
+	margin-left: 80px;
+}
+
+.nunu{
+	margin-left: 180px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript" src=angular.js ></script>
+<body ng-app="myApp">
+
+<div id="ejercicio1">
+    <p>nombre:</p>
+    <p> <input type="text" ng-model= "nombre" name="nombre">
+    </p>
+    <p>apellido:</p>
+    <p> <input type="text" ng-model= "apellido" name="apellido">
+    </p>
+    <p>Bienvenido{{nombre+ "" +apellido}}</p>
+</div>
+
+
+
+<p>operando1<input type="text" ng-model="operando1" name="operando1"></p>
+<p>operando2<input type="text" ng-model="operando2" name="operando2"></p>
+	
+<button ng-click="calcular=operando1*operando2">calcular</button>
+<p>{{calcular}}</p>	
+
+
+<input type="text" ng-model="text" placeholder="Enter you input here...">
+
+<p>Input value: {{ text }}</p>
+<p>Filtered Value: {{ text | reverse }}</p>
+
+	<div ng-app="myApp">
+
+		<input type="text" ng-model="text" placeholder="Enter you input here...">
+
+		<p>Input value: {{ text }}</p>
+
+		<p>Filtered Value: {{ text | reverse }}</p>
+
+	</div>
+
+	<script>
+
+		var myApp = angular.module("myApp",[]);
+
+		myApp.filter("reverse", function() {
+
+			return function(input) {
+
+				return input.split("").reverse().join("");
+
+			};
+
+		});
+
+	</script>
+	</body>
